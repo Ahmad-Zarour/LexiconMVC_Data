@@ -7,9 +7,12 @@ namespace LexiconWebApp.Models
 {
     public class FeverCheckerModel
     {
+        public float Temperature { get; set; }
+        
+
 		public static string Fever(float temperature)
 		{
-
+         
             if (temperature <= 35)
                 return "Too low temperature!, Please call for help";
             else if (temperature >= 39)

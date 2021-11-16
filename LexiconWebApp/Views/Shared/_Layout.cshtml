@@ -5,31 +5,33 @@
     <title>@ViewBag.Title</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>
-                <img src="~/img/Logo.png" alt="Page Logo" />
-            </li>
-            <li>
-                <a asp-controller="Home" asp-action ="Index"> Home</a>
-            </li>
-            <li>
-                <a asp-controller="Home" asp-action ="About"> About</a>
-            </li>
-            <li>
-                <a asp-controller="Home" asp-action ="Contact"> Contact</a>
-            </li>
-            <li>
-                <a asp-controller="Home" asp-action ="Projects"> Projects</a>
-            </li>
-            <li>
-                <a asp-controller="Doctor" asp-action ="FeverCheck"> Fever Check</a>
-            </li>
-            <li>
-                <a asp-controller="GuessingGame" asp-action ="GuessingGame"> Guessing Game</a>
-            </li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <img src="~/img/Logo.png" alt="Page Logo" />
+                </li>
+                <li>
+                    <a asp-controller="Home" asp-action="Index"> Home</a>
+                </li>
+                <li>
+                    <a asp-controller="Home" asp-action="About"> About</a>
+                </li>
+                <li>
+                    <a asp-controller="Home" asp-action="Contact"> Contact</a>
+                </li>
+                <li>
+                    <a asp-controller="Home" asp-action="Projects"> Projects</a>
+                </li>
+                <li>
+                    <a asp-controller="Doctor" asp-action="FeverCheck"> Fever Check</a>
+                </li>
+                <li>
+                    <a asp-controller="GuessingGame" asp-action="GuessingGame"> Guessing Game</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <section>
         <div>
             @RenderBody()
