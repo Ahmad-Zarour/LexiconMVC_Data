@@ -9,14 +9,16 @@ namespace LexiconWebApp.Controllers
 {
     public class GuessingGameController : Controller
     {
-        public IActionResult GuessingGame()
+		[HttpGet("GuessingGame")]
+		public IActionResult GuessingGame()
         {
 			HttpContext.Session.SetInt32("randNum",new Random().Next(0, 100));
 			ViewBag.Title = "Play Guessing Game";
 			return View();
         }
+
 		[HttpPost]
-		public IActionResult GuessingGame(int userInput)
+		public IActionResult GuessingGame(int userInput) 
 		{
 			ViewBag.ResultMessage = null;
 			int randNum = (int)HttpContext.Session.GetInt32("randNum");

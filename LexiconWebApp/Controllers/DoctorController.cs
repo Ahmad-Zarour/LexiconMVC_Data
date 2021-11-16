@@ -14,6 +14,7 @@ namespace LexiconWebApp.Controllers
             ViewBag.Title = "Check Your temperature";
             return View();
         }
+        
         [HttpPost]
         public IActionResult FeverCheck(float temperature)
         {

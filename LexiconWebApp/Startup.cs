@@ -32,12 +32,19 @@ namespace LexiconWebApp
             app.UseRouting();
             app.UseSession();
 
+
+
+
             app.UseEndpoints(cfg =>
             {
                 cfg.MapControllerRoute("Defult",
                     "/{controller}/{action}/{id?}",
                     new { controller ="Home", Action ="Index" });
+
+
             });
+
+
         }
     }
 }

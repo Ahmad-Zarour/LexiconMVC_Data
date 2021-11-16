@@ -30,15 +30,5 @@ namespace LexiconWebApp.Controllers
             ViewBag.Title = "Some Projects";
             return View();
         }
-        public IActionResult FeverCheck()
-        {
-            ViewBag.Title = "Check Your temperature";
-            return View();
-        }
-        public IActionResult GuessingGame()
-        {
-            ViewBag.Title = "Play Guessing Game";
-            return View();
-        }
     }
 }
