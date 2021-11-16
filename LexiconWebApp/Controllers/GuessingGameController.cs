@@ -13,11 +13,10 @@ namespace LexiconWebApp.Controllers
 		public IActionResult GuessingGame()
         {
 			HttpContext.Session.SetInt32("randNum",new Random().Next(0, 100));
-			ViewBag.Title = "Play Guessing Game";
 			return View();
         }
 
-		[HttpPost]
+		[HttpPost("GuessingGame")]
 		public IActionResult GuessingGame(int userInput) 
 		{
 			ViewBag.ResultMessage = null;

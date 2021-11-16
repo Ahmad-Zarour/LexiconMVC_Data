@@ -9,13 +9,13 @@ namespace LexiconWebApp.Controllers
 {
     public class DoctorController : Controller
     {
+        [HttpGet("Doctor/FeverCheck")]
         public IActionResult FeverCheck()
         {
-            ViewBag.Title = "Check Your temperature";
             return View();
         }
         
-        [HttpPost]
+        [HttpPost("Doctor/FeverCheck")]
         public IActionResult FeverCheck(float temperature)
         {
             ViewBag.message = FeverCheckerModel.Fever(temperature);
