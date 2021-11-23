@@ -45,41 +45,18 @@
 
             </div>
 
-            <input type="submit"  name="btnCreatePerson" value="Add New Person" />
+            <input type="submit" name="btnCreatePerson" value="Add New Person" />
 
         </form>
     </div>
     <br />
 
+    
+
     <div class="container">
-        <h2> Table of People</h2>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Person ID</th>
-                    <th>Name</th>
-                    <th>PhoneNumber</th>
-                    <th>City</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var person in Model.PeopleListViewModel)
-                {
-    <tr>
-        <td>@person.Id</td>
-        <td>@person.Name</td>
-        <td>@person.PhoneNumber</td>
-        <td>@person.City</td>
-        <td>
-            <a href="#" onclick="location.href =
-                    '@Url.Action("DeletePerson","People", new { id=person.Id })'">Delete</a>
-        </td>
-    </tr>
-}
-            </tbody>
-        </table>
+        <partial name="_partialPeopleList" model="Model.PeopleListViewModel" />
     </div>
+
 </body>
 </html>
 
