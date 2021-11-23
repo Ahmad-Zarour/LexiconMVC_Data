@@ -24,10 +24,10 @@
     @{ foreach (Person person in Model)
         {
             
-            <div class="col-md "> person.Id </div>
-            <div class="col-md"> person.Name</div>
-            <div class="col-md">person.PhoneNumber</div>
-            <div class="col-md"> person.City</div>
+            <div class="col-md "> @person.Id </div>
+            <div class="col-md"> @person.Name</div>
+            <div class="col-md">@person.PhoneNumber</div>
+            <div class="col-md"> @person.City</div>
             <div class="col-md">
                 <a class="btn btn-danger btn-sm fw-bold float-start" onclick="location.href =
                     '@Url.Action("DeletePerson","People", new{ id= person.Id})'">Delete</a>
