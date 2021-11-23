@@ -2,39 +2,42 @@
 <head>
     <link rel="stylesheet" href="~/css/site.css">
     <meta charset="utf-8" />
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
     <title>@ViewBag.Title</title>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li>
-                    <img src="~/img/Logo.png" alt="Page Logo" />
-                </li>
-                <li>
-                    <a asp-controller="Home" asp-action="Index"> Home</a>
-                </li>
-                <li>
-                    <a asp-controller="Home" asp-action="About"> About</a>
-                </li>
-                <li>
-                    <a asp-controller="Home" asp-action="Contact"> Contact</a>
-                </li>
-                <li>
-                    <a asp-controller="Home" asp-action="Projects"> Projects</a>
-                </li>
-                <li>
-                    <a asp-controller="Doctor" asp-action="FeverCheck"> Fever Check</a>
-                </li>
-                <li>
-                    <a asp-controller="GuessingGame" asp-action="GuessingGame"> Guessing Game</a>
-                </li>
+            <div class="container">
+                <ul>
+                    <li>
+                        <img src="~/img/Logo.png" alt="Page Logo" />
+                    </li>
+                    <li>
+                        <a asp-controller="Home" asp-action="Index"> Home</a>
+                    </li>
+                    <li>
+                        <a asp-controller="Home" asp-action="About"> About</a>
+                    </li>
+                    <li>
+                        <a asp-controller="Home" asp-action="Contact"> Contact</a>
+                    </li>
+                    <li>
+                        <a asp-controller="Home" asp-action="Projects"> Projects</a>
+                    </li>
+                    <li>
+                        <a asp-controller="Doctor" asp-action="FeverCheck"> Fever Check</a>
+                    </li>
+                    <li>
+                        <a asp-controller="GuessingGame" asp-action="GuessingGame"> Guessing Game</a>
+                    </li>
 
-                <li>
-                    <a asp-controller="People" asp-action="PeopleList">People</a>
-                </li>
+                    <li>
+                        <a asp-controller="People" asp-action="PeopleList">People</a>
+                    </li>
 
-            </ul>
+                </ul>
+                </div>
         </nav>
     </header>
     <section>
