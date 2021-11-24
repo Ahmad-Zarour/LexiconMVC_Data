@@ -2,7 +2,7 @@
 <head>
     <link rel="stylesheet" href="~/css/site.css">
     <meta charset="utf-8" />
-    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    
     <title>@ViewBag.Title</title>
 </head>
 <body>
@@ -36,8 +36,12 @@
                         <a asp-controller="People" asp-action="PeopleList">People</a>
                     </li>
 
+                    <li>
+                        <a asp-controller="Ajax" asp-action="Index">People Ajax</a>
+                    </li>
+
                 </ul>
-                </div>
+            </div>
         </nav>
     </header>
     <section>
@@ -46,6 +50,15 @@
         </div>
     </section>
     <footer>@DateTime.Now.ToShortDateString() &copy;Ahmad Zarour</footer>
+
+
+
+
+    
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/js/PersonScript.js"></script>
+    @RenderSection("Scripts", required: false)
 </body>
 
 </html>
