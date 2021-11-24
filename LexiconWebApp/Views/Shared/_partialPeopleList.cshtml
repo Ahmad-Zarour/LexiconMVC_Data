@@ -1,4 +1,5 @@
-﻿@model List<Person>
+﻿
+@model List<Person>
 
 
 <div class="container">
@@ -10,10 +11,10 @@
         </div>
         <div class="col-bold">
             <b>Phone Number</b>
-</div>
+        </div>
         <div class="col-bold">
             <b> City</b>
-</div>
+        </div>
         <div class="col-bold"><b>Action</b></div>
     </div>
 </div>
@@ -21,7 +22,7 @@
 <div class="row row-cols-md-5 justify-content-md-between" style="border:1px dashed black;">
     @{ foreach (Person person in Model)
         {
-            
+
             <div class="col-md "> @person.Id </div>
             <div class="col-md"> @person.Name</div>
             <div class="col-md">@person.PhoneNumber</div>
@@ -32,4 +33,5 @@
             </div>
         } }
 </div>
+
 
