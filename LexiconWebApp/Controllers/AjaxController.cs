@@ -22,6 +22,7 @@ namespace LexiconWebApp.Controllers
         public IActionResult GetPerson()
         { 
             CreatePersonViewModel createPersonViewModel = new CreatePersonViewModel();
+            
             List<Person> personList = createPersonViewModel.GetListPerson();
             return PartialView("_partialPeopleList", personList);   
         }
