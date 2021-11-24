@@ -1,8 +1,6 @@
 ﻿@model List<Person>
 
 
-
-
 <div class="container">
     <div class="row row-cols-md-5 justify-content-md-between">
 
@@ -33,6 +31,5 @@
                     '@Url.Action("DeletePerson","People", new{ id= person.Id})'">Delete</a>
             </div>
         } }
-
 </div>
-<br />
+

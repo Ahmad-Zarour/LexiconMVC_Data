@@ -8,7 +8,6 @@ namespace LexiconMVC_Data.Controllers
 {
     public class PeopleController : Controller
     {
-        
         public IActionResult PeopleList()
         { 
             CreatePersonViewModel createPersonViewModel = new CreatePersonViewModel();
@@ -21,6 +20,7 @@ namespace LexiconMVC_Data.Controllers
 
         public IActionResult DeletePerson(int id)
         {
+
             CreatePersonViewModel createPersonViewModel = new CreatePersonViewModel();
             Person person = createPersonViewModel.GetPersonById(id);
             createPersonViewModel.DeletePerson(person);

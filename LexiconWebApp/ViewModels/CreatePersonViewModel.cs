@@ -59,8 +59,8 @@ namespace LexiconWebApp.Models
         public Person GetPersonById(int id)
         {
             Person personWithId = _personList.Find(p => p.Id == id);
-            if (personWithId == null)
-                throw new ArgumentOutOfRangeException();
+            //if (personWithId == null)
+            //    throw new ArgumentOutOfRangeException();
             return personWithId;
         }
     }
